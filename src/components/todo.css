@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.container .header-01 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  padding: 2rem 7%;
+}
+.header-01 .logo h1 {
+  color: #333d29;
+  cursor: pointer;
+}
+#name span {
+  color: #936639;
+}
+
+.header-01 .end nav {
+  position: relative;
+}
+.header-01 .end nav a {
+  text-decoration: none;
+  color: #936639;
+  padding: 12px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.header-01 .end {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-01 .end nav a:hover {
+  color: #333d29;
+  border-bottom: 1px solid #333d29;
+}
+.suggestion_box {
+  width: 190px;
+  height: 36px;
+  margin-left: 35px;
+}
+.suggestion_box button {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: 1px solid #936639;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 23px;
+  transition: all 0.3s ease;
+}
+.suggestion_box button:hover {
+  background-color: #936639;
+  color: #fff;
+}
+.bars {
+  display: none;
+  cursor: pointer;
+}
+.header-01 .bars i {
+  color: #333d29;
+  font-size: 1.8rem;
+}
+
+.negative-bars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 38px;
+}
+.negative-bars i {
+  font-size: 34px;
+  cursor: pointer;
+}
+
+#deactive {
+  display: none;
+}
+
+
+@media screen and (max-width: 980px) {
+  #deactive {
+    display: block;
+  }
+
+  .active {
+    display: flex !important;
+  }
+
+  .header-01 .end {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background: #936639;
+    top: 0px;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .end nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .end nav a {
+    color: #fff !important;
+    padding: 25px !important;
+    font-size: 22px !important;
+  }
+  .bars {
+    display: block;
+    opacity: 12;
+  }
+
+  .header-01 .end nav a:hover {
+    color: #333d29 !important;
+    border-bottom: none;
+  }
+  .suggestion_box {
+    width: 190px;
+    height: 36px;
+    margin-top: 40px;
+    border: 1px solid;
+  }
+  .suggestion_box button {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: 1px solid #936639;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 23px;
+    transition: all 0.3s ease;
+  }
+  .suggestion_box button:hover {
+    background-color: #936639;
+    color: #fff;
+    background: none;
+  }
+  .header-01 .logo h1 {
+    font-size: 30px;
+  }
+  .header-02 .part-01-header-02 {
+    display: none;
+  }
+  /* .part-02-header-02 {
+    display: grid;
+    align-items: center;
+    text-align: center;
+  } */
+  .header-02 {
+    padding: 6rem 0 6rem 12% !important;
+    }
+    .part-02-header-02 .input-section {
+        width: 50% !important;
+    }
+    .part-02-header-02 .input-section input {
+        width: 98% !important;
+      }
+}
+
+/* ___________Header-02_____________ */
+
+.header-02 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 2%;
+}
+.header-02 .part-01-header-02 {
+  width: 25%;
+}
+.part-01-header-02 img {
+  width: 100%;
+}
+.part-02-header-02 {
+  align-items: center;
+  text-align: center;
+}
+.part-02-header-02 .input-section {
+  height: 50px;
+  margin-bottom: 23px;
+  width: 56%;
+}
+
+.part-02-header-02 #impo {
+  display: flex;
+}
+
+.part-02-header-02 .input-section input {
+  width: 96%;
+  height: 100%;
+  font-size: 19px;
+  border-color: #936639;
+  padding-left: 13px;
+}
+
+#added_button {
+  width: 23%;
+  height: 8vh;
+  cursor: pointer;
+  background-color: #936639;
+  color: #fff;
+  border: none;
+  font-size: 15px;
+  font-weight: 300;
+  transition: all 0.3s ease;
+}
+#added_button:hover {
+  background-color: #333d29;
+  color: #fff;
+}
+.part-02-header-02 .button-selection {
+  width: 72%;
+}
+.time_selection_part {
+  text-align: start;
+  width: 86%;
+}
+.button-selection .time_selection_part h2 {
+  font-size: 24px;
+  text-align: start;
+}
+#time {
+  width: 15%;
+  margin-right: 11px;
+  margin-top: 22px;
+  cursor: pointer;
+}
+
+.container .part-03 h4 {
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 22px;
+}
+#task {
+  border: 1px solid #936639;
+  padding: 8px;
+  box-shadow: 0px 0px 6px #333d29;
+  margin-bottom: 9px;
+}
+#task h3 {
+  font-size: 16px;
+  margin-bottom: 11px;
+}
+#task .task_buttons {
+  text-align: center;
+}
+.task_buttons button {
+  margin-right: 7px;
+  width: 100px;
+  height: 30px;
+  background: #936639;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+#time_remaning {
+  margin-top: 8px;
+  text-align: start;
+  margin-left: 14px;
+  color: #936639;
+}
+
+#task_list {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: auto auto;
+  grid-row-gap: 8px;
+  grid-column-gap: 41px;
+}
+#task_name
+{
+  margin-bottom: 12px;
+}
+
+
